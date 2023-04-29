@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, ContainerCards, ContainerMain, ContentCards, ContentMain } from "./styles";
+import { Card, ContainerCards, ContentCards } from "./styles";
 import Previwepp from "../../../assets/previwapp.svg";
 import IconDog from "../../../assets/iconDog.svg";
 import IconCat from "../../../assets/iconCat.svg";
@@ -10,8 +10,8 @@ const nunito = Nunito({ subsets: ['latin'] })
 
 export function Main() {
   return (
-    <ContainerMain className={`${nunito.className}`}>
-      <ContentMain>
+    <>
+      
         <Image
           width={656}
           height={646}
@@ -63,7 +63,7 @@ export function Main() {
             </p>
           </Card>
         </ContainerCards>
-      </ContentMain>
-    </ContainerMain>
+      
+    </>
   )
 }

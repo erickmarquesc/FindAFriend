@@ -1,4 +1,4 @@
-import { Container, Content } from '@/components/Home/container'
+import { Container, ContainerMain, Content, ContentMain } from '@/components/Home/container'
 import { Footer } from '@/components/Home/Footer'
 import { Header } from '@/components/Home/Header'
 import { Hero } from '@/components/Home/Hero'
@@ -17,7 +17,12 @@ export default function Home() {
           <Footer />
         </Content>
       </Container>
-      <Main />
+      <ContainerMain className={`${nunito.className}`}>
+        <ContentMain>
+          <Main />
+
+        </ContentMain>
+      </ContainerMain>
     </>
   )
 }
