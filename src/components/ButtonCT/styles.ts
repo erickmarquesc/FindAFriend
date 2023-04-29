@@ -12,7 +12,7 @@ export const ContainerButtonCT = styled.div`
   button{
     all: unset;
 
-    width: 492px;
+    width: 30.75rem;
     color: black;
     background-color: #fff;
     border-color: #fff;
@@ -21,7 +21,7 @@ export const ContainerButtonCT = styled.div`
     text-align: center;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 
     transition: 0.5s;

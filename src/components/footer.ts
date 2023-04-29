@@ -8,8 +8,8 @@ export const Footer = styled.footer`
   margin-top: 2rem;
 
   p{
-    font-size: 24px;
-    max-width: 407px;
+    font-size: 1.5rem;
+    max-width: 25rem;
   }
 
   @media (max-width: 1000px){
@@ -18,7 +18,7 @@ export const Footer = styled.footer`
     gap: 2rem;
 
     p{
-      font-size:28px;
+      font-size:1.75rem;
       text-align: center;
 
     }
