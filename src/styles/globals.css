@@ -1,6 +1,9 @@
 :root {
-  --background: #F15156;
-  --textColor: #fff;
+  --backgroundSecundary: #F15156;
+  --textColorPrimary: #fff;
+  --textColorSecundary: #000;
+  --background: #FFF;
+  --backgroundTertiary: #E44449 ;
 }
 
 * {
@@ -17,7 +20,7 @@ body {
 }
 
 body {
-  color: var(--textColor);
+  color: var(--textColorPrimary);
   background: var(--background);
 }
 
