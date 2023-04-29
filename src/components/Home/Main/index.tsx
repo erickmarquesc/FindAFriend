@@ -11,7 +11,6 @@ const nunito = Nunito({ subsets: ['latin'] })
 export function Main() {
   return (
     <>
-      
         <Image
           width={656}
           height={646}

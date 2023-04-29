@@ -16,10 +16,18 @@ export const ContentCards = styled.section`
   .shortcard{
     width: 17.5rem;
   }
-
+  
   .longcard{
     width: 100%;
     margin-top: 2rem;
+  }
+
+  @media (max-width: 1000px){
+    flex-direction: column;
+
+    .shortcard{
+    width: 100%;
+  }
   }
 `;
 
