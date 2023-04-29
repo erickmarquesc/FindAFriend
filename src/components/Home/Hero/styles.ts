@@ -1,26 +1,25 @@
 import styled from "styled-components";
 
-export const Footer = styled.footer`
+export const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
 
-  p{
-    font-size: 1.5rem;
-    max-width: 25rem;
+  h1{
+    font-size: 4.5rem;
+    line-height: 90%;
+    font-weight: bold;
   }
 
   @media (max-width: 1000px){
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 
-    p{
-      font-size:1.75rem;
-      text-align: center;
-
+    h1{
+      margin-top: 2rem;
+      
     }
   }
+
 `;

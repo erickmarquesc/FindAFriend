@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: auto;
+  height: 100vh;
   padding: 8rem 0 2rem;
+  background-color: var(--backgroundSecundary);
 `;
 
 export const Content = styled.div`

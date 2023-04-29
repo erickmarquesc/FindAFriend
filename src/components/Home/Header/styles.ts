@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
+export const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: left;
