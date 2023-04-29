@@ -30,5 +30,13 @@ export const ContainerButtonCT = styled.div`
       background: var(--background);
       color: #fff
     }
+
+    @media (max-width: 1000px){
+      width: 20rem;
+    }
+  }
+
+  @media (max-width: 1000px){
+    width: 100%;
   }
 `;
