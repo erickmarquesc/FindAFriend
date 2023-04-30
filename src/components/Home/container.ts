@@ -69,6 +69,8 @@ export const ContentMain = styled.div`
     }
 
     @media (max-width: 1000px){
+      padding: 1rem ;
+
       h1{
         font-size: 2rem;
         width: 19rem;
