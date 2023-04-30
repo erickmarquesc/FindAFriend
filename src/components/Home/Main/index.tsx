@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card, ContainerCards, ContentCards } from "./styles";
-import Previwepp from "../../../assets/previwapp.svg";
+import Previwapp from "../../../assets/previwapp.svg";
 import IconDog from "../../../assets/iconDog.svg";
 import IconCat from "../../../assets/iconCat.svg";
 import IconDogII from "../../../assets/iconSecundDog.svg";
@@ -11,10 +11,11 @@ const nunito = Nunito({ subsets: ['latin'] })
 export function Main() {
   return (
     <>
-        <Image
+      <Image
+        className="previwapp"
           width={656}
           height={646}
-          src={Previwepp}
+        src={Previwapp}
           alt="Imagem que ilustra o aplicativo"
         />
         

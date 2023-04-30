@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
-
-
 export const ContainerCards = styled.section`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  h1{
+    font-size: 3rem;
+    color: var(--titleColor);
+    
+    @media (max-width: 1000px){
+      font-size: 1.5rem;
+    }
+  }
 `;
 
 export const ContentCards = styled.section`
