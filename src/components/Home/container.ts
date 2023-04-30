@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: auto;
+  height: 100vh;
   padding: 4rem 0 1rem;
   background-color: var(--backgroundSecundary);
+
+  @media (max-width: 1000px){
+      height: 100%;
+
+    
+  }
 `;
 
 export const Content = styled.div`
