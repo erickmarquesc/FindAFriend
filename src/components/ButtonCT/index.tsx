@@ -1,13 +1,11 @@
-import { ContainerButtonCT } from "./styles";
+import { Button } from "./styles";
 import { Nunito } from 'next/font/google'
 const nunito = Nunito({ subsets: ['latin'] })
 
 export function ButtonCT() {
   return (
-    <ContainerButtonCT className={`${nunito.className}`}>
-      <button>
+      <Button>
         Acesse agora
-      </button>
-    </ContainerButtonCT>
+      </Button>
   )
 }

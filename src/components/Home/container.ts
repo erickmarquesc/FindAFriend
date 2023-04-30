@@ -25,6 +25,7 @@ export const ContainerMain = styled.div`
   color: var(--textColorSecundary);
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 `;
 
 export const ContentMain = styled.div`
@@ -41,7 +42,7 @@ export const ContentMain = styled.div`
 
   .infoCT{
     background-color: var(--backgroundSecundary);
-    max-width: 700px;
+    max-width: 43.75rem;
     padding: 2rem;
     border-radius: 20px;
     display: flex;
@@ -52,18 +53,30 @@ export const ContentMain = styled.div`
     justify-content: space-between;
 
     h1{
-      font-size: 48px;
+      font-size: 3rem;
       color: #F4D35E;
       font-weight: bold;
     }
 
     p{
-      font-size: 20px;
-      max-width: 590px;
+      font-size: 1.25rem;
+      max-width: 36.875rem;
 
       strong{
       color: #F4D35E;
       font-weight: bold;
+      }
+    }
+
+    @media (max-width: 1000px){
+      h1{
+        font-size: 2rem;
+        width: 19rem;
+      }
+
+      p{
+        font-size: 1rem;
+        text-align: center;
       }
     }
   }

@@ -9,10 +9,10 @@ import Pet from "../../../assets/pet.svg";
 import PetII from "../../../assets/petII.svg";
 import PetIII from "../../../assets/petIII.svg";
 
-import { Nunito } from 'next/font/google'
 import { ContentMain } from "../container";
 import { ButtonCT } from "@/components/ButtonCT";
 import { CardPet } from "./CardPets/CardPet";
+import { Nunito } from 'next/font/google'
 const nunito = Nunito({ subsets: ['latin'] })
 
 export function Main() {
@@ -99,7 +99,7 @@ export function Main() {
           <CardPet img={Pet} title="Alfredo" />
           <CardPet img={PetII} title="Getúlio" />
           <CardPet img={PetIII} title="Juscelino" />
-          
+
         </div>
       </ContentMain>
     </>

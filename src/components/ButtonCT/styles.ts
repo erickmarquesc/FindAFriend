@@ -9,7 +9,15 @@ export const ContainerButtonCT = styled.div`
   padding: 40px 50px 40px 50px;
   border-radius: 20px;
 
-  button{
+  
+
+  @media (max-width: 1000px){
+    width: 100%;
+  }
+`;
+
+export const Button = styled.button`
+
     all: unset;
 
     width: 30.75rem;
@@ -34,9 +42,5 @@ export const ContainerButtonCT = styled.div`
     @media (max-width: 1000px){
       width: 20rem;
     }
-  }
-
-  @media (max-width: 1000px){
-    width: 100%;
-  }
+  
 `;
