@@ -18,29 +18,29 @@ export const ContainerButtonCT = styled.div`
 
 export const Button = styled.button`
 
-    all: unset;
+  all: unset;
 
-    width: 30.75rem;
-    color: black;
-    background-color: var(--background);
-    border-color: var(--background);
-    padding: 19px;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 1.25rem;
-    font-weight: bold;
+  width: 30.75rem;
+  color: black;
+  background-color: var(--background);
+  border-color: var(--background);
+  padding: 19px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
 
-    transition: 0.5s;
+  transition: 0.5s;
 
-    :hover{
-      background: var(--backgroundSecundary);
-      color: var(--textColorPrimary)
-    }
+  :hover{
+    background: var(--backgroundSecundary);
+    color: var(--textColorPrimary)
+  }
 
-    @media (max-width: 1000px){
-      width: 20rem;
-    }
+  @media (max-width: 1000px){
+    width: 15rem;
+  }
   
 `;
