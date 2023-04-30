@@ -4,21 +4,29 @@ import Previwapp from "../../../assets/previwapp.svg";
 import IconDog from "../../../assets/iconDog.svg";
 import IconCat from "../../../assets/iconCat.svg";
 import IconDogII from "../../../assets/iconSecundDog.svg";
+import Logo from "../../../assets/logo.svg";
+import Pet from "../../../assets/pet.svg";
+import PetII from "../../../assets/petII.svg";
+import PetIII from "../../../assets/petIII.svg";
 
 import { Nunito } from 'next/font/google'
+import { ContentMain } from "../container";
+import { ButtonCT } from "@/components/ButtonCT";
+import { CardPet } from "./CardPets/CardPet";
 const nunito = Nunito({ subsets: ['latin'] })
 
 export function Main() {
   return (
     <>
-      <Image
-        className="previwapp"
+      <ContentMain>
+        <Image
+          className="previwapp"
           width={656}
           height={646}
-        src={Previwapp}
+          src={Previwapp}
           alt="Imagem que ilustra o aplicativo"
         />
-        
+
         <ContainerCards>
           <h1>
             Um app não,<br />
@@ -63,7 +71,37 @@ export function Main() {
             </p>
           </Card>
         </ContainerCards>
-      
+
+      </ContentMain>
+
+      <ContentMain>
+        <div className="infoCT">
+          <Image
+            src={Logo}
+            alt="logo da página"
+          />
+          <h1>
+            Há muitos
+            amigos esperando por você!
+          </h1>
+
+          <p>
+            O <strong>FiendAFriend conecta</strong> pessoas que estão procurando por um animal de estimação
+            com animais que <strong>precisam de um lar</strong> amoroso. <strong>É fácil de usar</strong> e você pode navegar
+            por uma variedade de animais para encontrar aquele que melhor se adapta ao seu
+            estilo de vida e necessidades.
+          </p>
+
+          <ButtonCT />
+        </div>
+
+        <div className="ContentCards">
+          <CardPet img={Pet} title="Alfredo" />
+          <CardPet img={PetII} title="Getúlio" />
+          <CardPet img={PetIII} title="Juscelino" />
+          
+        </div>
+      </ContentMain>
     </>
   )
 }

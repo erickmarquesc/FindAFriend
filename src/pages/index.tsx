@@ -18,10 +18,7 @@ export default function Home() {
         </Content>
       </Container>
       <ContainerMain className={`${nunito.className}`}>
-        <ContentMain>
-          <Main />
-
-        </ContentMain>
+        <Main />
       </ContainerMain>
     </>
   )
