@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, ContainerCards, ContentCards } from "./styles";
+import { Card, ContainerCards, ContentCards, ContentMain } from "./styles";
 import Previwapp from "../../../assets/previwapp.svg";
 import IconDog from "../../../assets/iconDog.svg";
 import IconCat from "../../../assets/iconCat.svg";
@@ -9,11 +9,9 @@ import Pet from "../../../assets/pet.svg";
 import PetII from "../../../assets/petII.svg";
 import PetIII from "../../../assets/petIII.svg";
 
-import { ContentMain } from "../container";
 import { ButtonCT } from "@/components/ButtonCT";
 import { CardPet } from "./CardPets/CardPet";
-import { Nunito } from 'next/font/google'
-const nunito = Nunito({ subsets: ['latin'] })
+
 
 export function Main() {
   return (
@@ -101,6 +99,16 @@ export function Main() {
           <CardPet img={PetIII} title="Juscelino" />
 
         </div>
+      </ContentMain>
+      <ContentMain>
+        <h1>
+          Sobre a FindAFriend
+        </h1>
+        <p>
+          A FindAFriend acredita que todo bichinho merece uma vida confortável e segura. 
+          Por isso, cria soluções que ajudam ONGs e entidades protetoras a conectar pessoas 
+          adotantes e animais resgatados. 
+        </p>
       </ContentMain>
     </>
   )

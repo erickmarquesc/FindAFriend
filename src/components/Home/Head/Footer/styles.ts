@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  justify-content: space-between;
 
   p{
     font-size: 1.5rem;
@@ -15,12 +14,11 @@ export const FooterContainer = styled.footer`
   @media (max-width: 1000px){
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
     p{
       font-size:1.75rem;
       text-align: center;
-
     }
   }
 `;

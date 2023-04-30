@@ -1,6 +1,6 @@
-import { HeaderContainer } from "@/components/Home/Header/styles";
+import { HeaderContainer } from "@/components/Home/Head/Header/styles";
 import Image from 'next/image'
-import Logo from '../../../assets/logo.svg'
+import Logo from '../../../../assets/logo.svg'
 
 export function Header() {
   return (

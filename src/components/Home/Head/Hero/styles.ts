@@ -3,8 +3,13 @@ import styled from "styled-components";
 export const HeroContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
+  .img{
+    width: 592px;
+    height: 305px;
+  }
 
   h1{
     font-size: 4.5rem;
@@ -17,9 +22,13 @@ export const HeroContainer = styled.div`
     flex-direction: column;
 
     h1{
-      margin-top: 2rem;
-      
+      font-size: 2.5rem;
     }
+
+    .img{
+      width: 380px;
+      height: 305px;
+  }
   }
 
 `;
