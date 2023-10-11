@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 
 import {
@@ -30,6 +31,7 @@ export function HeroSection() {
             <Image
               src={imgLogo}
               className="imgLogo"
+              priority
               alt="Logo FiandAFriend com um rostinho de cachorro"
             />
 
@@ -62,6 +64,7 @@ export function HeroSection() {
           <Image
             src={imgHero}
             className="imgHero"
+            priority
             alt="Imagem que contem seis animais entre cães e gato para ilustrar a página"
           />
 
