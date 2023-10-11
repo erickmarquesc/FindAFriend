@@ -1,9 +1,11 @@
-import { HTMLProps, useState } from "react";
+"use client"
+import { useState } from "react";
 import { Menu, MenuButton, MenuItem, MenuLink, MenuList } from "./styles"
 import Image from "next/image";
 import imgMenuOpen from '@/Assets/MenuOpen.svg'
 import imgMenuClose from '@/Assets/MenuClose.svg'
 import imgMenuLinkIcon from '@/Assets/IconLogo.svg'
+import { StyleSheetManager } from "styled-components";
 
 export function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +15,11 @@ export function HamburgerMenu() {
   };
 
   return (
-    <>
+    <StyleSheetManager shouldForwardProp={(prop) => prop !== 'isOpen'}>
+
       <MenuButton isOpen={isOpen} onClick={toggleMenu}>
-        <Image className="menuOpen" src={imgMenuOpen} alt="Icone de menu"/>
-        <Image className="menuClose" src={imgMenuClose} alt="Icone de fechar o menu"/>
+        <Image className="menuOpen" src={imgMenuOpen} alt="Icone de menu" />
+        <Image className="menuClose" src={imgMenuClose} alt="Icone de fechar o menu" />
       </MenuButton>
 
       <Menu isOpen={isOpen}>
@@ -79,7 +82,7 @@ export function HamburgerMenu() {
 
         </MenuList>
       </Menu>
-    </>
+    </StyleSheetManager>
   );
 };
 

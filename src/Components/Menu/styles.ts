@@ -4,6 +4,13 @@ interface IMenuProps {
   isOpen: boolean;
 };
 
+const filterProps = (prop: string) => {
+  if (prop === "isOpen") {
+    return false;
+  }
+  return true;
+};
+
 export const MenuButton = styled.button<IMenuProps>`
   z-index: 1;
   width: 72px;
